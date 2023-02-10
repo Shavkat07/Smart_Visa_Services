@@ -45,9 +45,15 @@ sayohat_dav = InlineKeyboardMarkup(
     inline_keyboard=(
         [
             InlineKeyboardButton(text="Shengen hududiga", callback_data="say_sheng"),
+            InlineKeyboardButton(text="Kanada", callback_data="say_kana"),
+            InlineKeyboardButton(text="Buyuk Britaniya", callback_data="say_brit")
         ],
     )
 )
+# %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+shen_say_mal_tan = InlineKeyboardMarkup()
+cana_say_mal_tan = InlineKeyboardMarkup()
+brit_say_mal_tan = InlineKeyboardMarkup()
 # %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 latv_oquv_mal_tan = InlineKeyboardMarkup()
 germ_oquv_mal_tan = InlineKeyboardMarkup()

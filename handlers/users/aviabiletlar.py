@@ -1,6 +1,7 @@
 from aiogram import types
 from keyboards.inline import aviabilet_davlatlar
-
+from data.aviabiletlar_haqida import *
+from keyboards.inline.aviabilet_davlatlar import aviabilet_inline
 from loader import dp
 
 import logging
@@ -39,3 +40,18 @@ async def kerakli_hujjatlar(msg: types.Message):
 ❗️Hamma hujjatlarni kompyuterxonadan scaner qilib yuboring iltimos.
 
 ▫️ Viza olish muddati o'rtacha 2-3 oy.""")
+
+
+# @dp.callback_query_handler(text="bilet_ross")
+# async def bolariya_bilet(callback: types.CallbackQuery):
+#     def xorvatiya_ish_visa():
+#         @dp.callback_query_handler(lambda c: c.data.startswith('bilet'))
+#         async def xorv_bilet(callback: types.CallbackQuery):
+#             a = callback.data
+#             await callback.message.delete()
+#             await callback.message.answer(ross_aviabilet[int(a[-1]) - 1], reply_markup=ross_malumot_tanlash)
+#
+#     aviabilet_inline(len(ross_aviabilet), ross_malumot_tanlash, callback.data)
+#     await callback.message.answer(ross_aviabilet[0], reply_markup=ross_malumot_tanlash)
+#     xorvatiya_ish_visa()
+

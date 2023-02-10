@@ -1,3 +1,5 @@
+shengen_say_visa = []
+
 brit_say_visa = ["""🇬🇧 Buyuk Britaniya 
 
 Londonda qisqa muddatli o'quv kurslari - Educational Tour

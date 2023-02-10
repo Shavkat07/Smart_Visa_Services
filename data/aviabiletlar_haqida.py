@@ -1,0 +1,7 @@
+ross_aviabilet = []
+turk_aviabilet = []
+angl_aviabilet = []
+duba_aviabilet = []
+aqsh_aviabilet = []
+germ_aviabilet = []
+latv_aviabilet = []

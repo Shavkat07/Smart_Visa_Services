@@ -32,7 +32,6 @@ async def bolariya_bilet(callback: types.CallbackQuery):
     bolgariya_ish_visa()
 
 
-
 @dp.callback_query_handler(text="oqish_latv")
 async def bolariya_bilet(callback: types.CallbackQuery):
     def bolgariya_ish_visa():
@@ -71,6 +70,8 @@ async def bolariya_bilet(callback: types.CallbackQuery):
             await callback.message.answer(cana_oqish_visa[int(a[-1]) - 1], reply_markup=cana_oquv_mal_tan)
 
     if bool(cana_oqish_visa) == 0:
+        await callback.message.answer(
+            "Kanada davlatiga afsuski hali visalarimiz yo'q.\nQo'shimcha malumot uchun Murojaat uchun tugmasini bosing.")
         pass
     else:
         add_ish_inline_keyboard(len(cana_oqish_visa), cana_oquv_mal_tan, callback.data)
@@ -87,7 +88,9 @@ async def bolariya_bilet(callback: types.CallbackQuery):
             await callback.message.delete()
             await callback.message.answer(shen_oqish_visa[int(a[-1]) - 1], reply_markup=shen_oquv_mal_tan)
 
-    if bool(cana_oqish_visa) == 0:
+    if bool(shen_oqish_visa) == 0:
+        await callback.message.answer(
+            "Shegen hududiga afsuski hali visalarimiz yo'q.\nQo'shimcha malumot uchun Murojaat uchun tugmasini bosing.")
         pass
     else:
         add_ish_inline_keyboard(len(shen_oqish_visa), shen_oquv_mal_tan, callback.data)
