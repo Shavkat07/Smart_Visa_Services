@@ -71,6 +71,7 @@ async def bolariya_bilet(callback: types.CallbackQuery):
             await callback.message.answer(cana_oqish_visa[int(a[-1]) - 1], reply_markup=cana_oquv_mal_tan)
 
     if bool(cana_oqish_visa) == 0:
+        await callback.message.answer("Kanada davlatiga afsuski hali visalarimiz yo'q.\nQo'shimcha malumot uchun Murojaat uchun tugmasini bosing.")
         pass
     else:
         add_ish_inline_keyboard(len(cana_oqish_visa), cana_oquv_mal_tan, callback.data)
