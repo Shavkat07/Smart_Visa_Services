@@ -44,7 +44,7 @@ oqish_dav = InlineKeyboardMarkup(
 sayohat_dav = InlineKeyboardMarkup(
     inline_keyboard=(
         [
-            InlineKeyboardButton(text="Shengen hududiga", callback_data="say_sheng"),
+            InlineKeyboardButton(text="Shengen hududiga", callback_data="say_shen"),
             InlineKeyboardButton(text="Kanada", callback_data="say_kana"),
             InlineKeyboardButton(text="Buyuk Britaniya", callback_data="say_brit")
         ],
